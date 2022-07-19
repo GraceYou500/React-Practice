@@ -46,6 +46,7 @@ const ExpenseForm = props => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
+    console.log('submitHandler', expenseData);
     props.onSaveExpenseData(expenseData);
 
     setEnteredTitle('');
